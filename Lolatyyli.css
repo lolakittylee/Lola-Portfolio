@@ -1,0 +1,233 @@
+
+body {
+        background-color: rgb(250, 226, 250);
+
+        
+}
+
+header {
+  background:rgb(250, 226, 250);
+ 
+  
+}
+
+h1 {
+  font-family: waterfall;
+  font-size: 100px;
+  color: #a84380;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #963aa4;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+h3 {
+  color:#a84284;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  font-size: 20px;
+}
+
+.aboutme {
+  font-size: 16px; 
+  font-style: oblique;
+  color: #a84284;
+
+}
+
+footer{
+  text-align: center;
+  color: #a65bbb;
+  font-family:cursive;
+  font-size: 14px;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: rgb(163, 59, 116);
+  text-decoration:none;  
+}
+
+nav ul li a:hover {
+  background: #f3d3fd;
+}
+
+/* Piilotetaan checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger-ikoni */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #8a26cd;
+
+}
+
+
+/* Desktop (yli 500px) */
+@media (min-width: 501px) {
+  nav ul {
+    flex-direction: row; /* Vaaka */
+    
+  }
+}
+
+/* Mobiili (alle 500px) */
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column; /* Pysty */
+    display: none; /* Piilotetaan oletuksena */
+    background: #f7e2fc;
+    width: 100%;
+  }
+
+  /* Hamburger näkyviin */
+  .menu-icon {
+    display: block;
+    position: absolute; 
+    top: 50px;
+    right: 0px;
+    z-index: 150;
+  }
+
+  /* Kun checkbox on valittu -> valikko näkyy */
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    width: 200px;
+    right: 20px;
+    border: #a84284 2px solid;
+  }
+}
+
+
+/* mobiili */
+@media only screen and (max-width: 440px)
+{
+        #topnav li {display:block;}
+        header{display: flex; flex-direction: column-reverse;
+                text-align: left;
+              }
+}
+
+/*keskikokoiset ja isot näytöt*/
+@media only screen and (min-width: 441px)
+{
+        .flex_container {display: flex;
+                  gap: 0px; 
+                  flex-wrap: wrap;
+              }
+        .flex_item{flex: 1;
+                   padding: 5px;}
+        .contactbox{flex: 1;
+                    padding: 5px;}
+
+   /*main {background-image: url();
+        background-repeat: no-repeat;
+    background-position: bottom right;}*/
+
+}
+
+
+/*isot näytöt*/
+@media only screen and (min-width: 1024px)
+    {
+        body {width: 1200px;
+        margin:auto;
+        border: 0;}
+
+}
+
+.galleria {
+        width: 370px;
+       /* height: 400px;*/
+        padding: 5px; 
+}
+
+.aboutme {
+  width: 370px;
+  padding: 10px;
+}
+
+/*.galleria-vaaka {
+    width: 575px;
+    height: 400px;
+    padding:7px;
+}*/
+
+.nappi1 {
+  width: 20px;
+  vertical-align: top;
+}
+
+.nappi2 {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.caption {
+  color: #67037e;
+  font-style: italic;
+  font-size: 16px;
+  
+}
+
+/*
+.vali{
+  width: 15px;
+  vertical-align:middle;
+}
+*/
+
+.CONTACTME {
+  width: 370px;
+  padding: 20px;
+}
+
+.contact {
+  width: 40px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.contactinfo {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #a84284;
+  vertical-align: middle;
+}
+
+p a {
+  display: block;
+  padding: 15px 50px;
+  color: rgb(205, 103, 159);
+  text-decoration:none;
+  
+}
+
+.contactbox {
+  border: #f198db 8px solid;
+  border-style: double;
+}
