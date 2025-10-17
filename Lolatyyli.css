@@ -1,4 +1,3 @@
-
 body {
         background-color: rgb(250, 226, 250);
 
@@ -54,7 +53,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  
+ 
 }
 
 nav ul li a {
@@ -64,8 +63,9 @@ nav ul li a {
   text-decoration:none;  
 }
 
+
 nav ul li a:hover {
-  background: #f3d3fd;
+  background:#f3d3fd;
 }
 
 /* Piilotetaan checkbox */
@@ -99,12 +99,13 @@ nav ul li a:hover {
     display: none; /* Piilotetaan oletuksena */
     background: #f7e2fc;
     width: 100%;
+    
   }
 
   /* Hamburger näkyviin */
   .menu-icon {
     display: block;
-    position: absolute; 
+    position: fixed;
     top: 50px;
     right: 0px;
     z-index: 150;
@@ -113,7 +114,7 @@ nav ul li a:hover {
   /* Kun checkbox on valittu -> valikko näkyy */
   #menu-toggle:checked + .menu-icon + nav ul {
     display: flex;
-    position: absolute;
+    position:fixed;
     z-index: 10;
     top: 100px;
     width: 200px;
@@ -130,6 +131,7 @@ nav ul li a:hover {
         header{display: flex; flex-direction: column-reverse;
                 text-align: left;
               }
+    
 }
 
 /*keskikokoiset ja isot näytöt*/
@@ -171,11 +173,6 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-/*.galleria-vaaka {
-    width: 575px;
-    height: 400px;
-    padding:7px;
-}*/
 
 .nappi1 {
   width: 20px;
@@ -194,12 +191,6 @@ nav ul li a:hover {
   
 }
 
-/*
-.vali{
-  width: 15px;
-  vertical-align:middle;
-}
-*/
 
 .CONTACTME {
   width: 370px;
